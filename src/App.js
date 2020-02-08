@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
+import ProductList from './pages/productBrowse/index.js'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="main">
+            <header className="header home-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <p>
+                Hey everyone and welcome to sock mania
+                </p>
+                <a
+                    className="link"
+                    rel="noopener noreferrer"
+                >
+                    Product
+                </a>
+                <ProductList name="Sock1"/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
